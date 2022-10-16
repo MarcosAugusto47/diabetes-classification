@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 
-with open('models/pipeline.pickle', 'rb') as f:
+with open('models/ensemble_model.pickle', 'rb') as f:
     loaded_pipe = pickle.load(f)
 
 def predict_diabetes(new_data):

@@ -12,11 +12,11 @@ The application returns 0 (Negative) or 1 (Positive) via a POST request, that ne
     "BMI": 43.1,  
     "DiabetesPedigreeFunction": 2.288,  
     "Age": 33  
-    }
+}
   
 More samples can be set via the POST request.
 
-The models were trained, using Logistic Regression, with some variations and are all written on the jupyter notebook.
+The final model is an ensemble method that uses Logistic Regression, K-Nearest Neighbors and Random Forest, that uses a voting rule classifier between those three models. The Logistic Regression was tuned finding the best regularization technique (Lasso or Ridge) and the respective hyperparameter. Also, it was applied standard scaling for this specific model.
 
-The application uses Docker and can be runned via the command:  
+The application uses Docker and can be runned via the command (the image is published in my Docker Hub account):  
 docker run -p5000:5000 marcosaugusto47/diabetes-app
