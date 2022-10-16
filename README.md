@@ -18,4 +18,5 @@ More samples can be set via the POST request.
 
 The models were trained, using Logistic Regression, with some variations and are all written on the jupyter notebook.
 
-The application uses Docker and can be runned via the command docker run -p5000:5000 marcosaugusto47/diabetes-app
+The application uses Docker and can be runned via the command:  
+docker run -p5000:5000 marcosaugusto47/diabetes-app
