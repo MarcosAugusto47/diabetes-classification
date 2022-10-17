@@ -18,5 +18,7 @@ More samples can be set via the POST request.
 
 The final model is an ensemble method that uses Logistic Regression, K-Nearest Neighbors and Random Forest, that uses a voting rule classifier between those three models. For Logistic Regression, first the data was standard scaled and then the model was tuned finding the best regularization technique (Lasso or Ridge) and the respective hyperparameter.
 
+![diagram](diagram.jpg "Diagram")
+
 The application uses Docker and can be runned via the command (the image is published in my Docker Hub account):  
 `docker run -p5000:5000 marcosaugusto47/diabetes-app`
